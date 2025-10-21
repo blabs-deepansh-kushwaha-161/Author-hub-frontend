@@ -1,0 +1,25 @@
+import { Route, Routes } from 'react-router'
+import './App.css'
+import Nav from './components/Navbar/Nav'
+
+import Landing from './Pages/Landing/Landing'
+import Home from './Pages/Home/Home'
+import Login from './Pages/Login/Login'
+import TextEditor from './Pages/TextEditor/TextEditor'
+function App() {
+  
+
+  return (
+    <>
+    <Nav />
+     <Routes>
+      <Route path='/' element={<Landing/>}/>
+      <Route path='/home' element={<Home/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/editor" element={<TextEditor/>}/>
+     </Routes>
+    </>
+  )
+}
+
+export default App
