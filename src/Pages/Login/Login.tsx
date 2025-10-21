@@ -1,14 +1,13 @@
 import React from 'react'
 import Input from '../../components/forms/Input'
+import Form from '../../components/forms/Form'
 
 function Login() {
   return (
     <>
-    <div className='flex justify-center align-center mt-20'>
+    <div className=' '>
 
-     <form action="" className=''>
-        <Input title="Name" />
-     </form>
+      <Form />
     </div>
     </>
   )

@@ -6,6 +6,7 @@ import Landing from './Pages/Landing/Landing'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
 import TextEditor from './Pages/TextEditor/TextEditor'
+import Dashboard from './Pages/Dashboard/Dashboard'
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
       <Route path='/home' element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/editor" element={<TextEditor/>}/>
+      <Route path='/dashboard' element={<Dashboard/>} />
      </Routes>
     </>
   )
