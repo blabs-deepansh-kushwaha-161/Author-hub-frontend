@@ -7,6 +7,7 @@ import Login from './Pages/Login/Login'
 import TextEditor from './Pages/TextEditor/TextEditor'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import UploadFile from './Pages/UploadFile'
+import Signup from './Pages/Login/Signup'
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
       <Route path='/' element={<Landing/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
       <Route path="/editor" element={<TextEditor/>}/>
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/converter' element={<UploadFile/>} />
