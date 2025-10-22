@@ -11,6 +11,7 @@ function Nav() {
             <Link to="/home">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/dashboard">Dashboard</Link>
+            <Link to="/converter">Converter</Link>
             </div>
             <div className='flex gap-4 align-middle justify-center'>
             <Link to="/login">Login</Link>

@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router'
 import './App.css'
 import Nav from './components/Navbar/Nav'
-
 import Landing from './Pages/Landing/Landing'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
 import TextEditor from './Pages/TextEditor/TextEditor'
 import Dashboard from './Pages/Dashboard/Dashboard'
+import UploadFile from './Pages/UploadFile'
 function App() {
   
 
@@ -19,6 +19,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/editor" element={<TextEditor/>}/>
       <Route path='/dashboard' element={<Dashboard/>} />
+      <Route path='/converter' element={<UploadFile/>} />
      </Routes>
     </>
   )
