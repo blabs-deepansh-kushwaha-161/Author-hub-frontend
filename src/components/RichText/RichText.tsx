@@ -524,7 +524,7 @@ export default function RichText() {
 	}, [editorConfig]);
 
 	return (
-		<div className="main-container">
+		<div className="main-container absolute top-50 left-1/2 transform -translate-x-1/2 ">
 			<div
 				className="editor-container editor-container_document-editor editor-container_include-outline editor-container_include-style editor-container_include-fullscreen"
 				ref={editorContainerRef}
