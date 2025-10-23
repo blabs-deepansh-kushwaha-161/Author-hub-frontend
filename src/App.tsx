@@ -9,6 +9,8 @@ import Dashboard from './Pages/Dashboard/Dashboard'
 import UploadFile from './Pages/UploadFile'
 import Signup from './Pages/Login/Signup'
 import About from './Pages/About/About'
+import BookEditor from './Pages/TextEditor/BookEditor'
+import BookList from './Pages/TextEditor/BookList'
 function App() {
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path="/editor" element={<TextEditor />} />
+        <Route path='/createbook' element={<BookEditor />} />
+        <Route path='/books' element={<BookList/>} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/converter' element={<UploadFile />} />
       </Routes>

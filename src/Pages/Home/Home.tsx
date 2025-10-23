@@ -48,7 +48,7 @@ fetchUserData();
         <h1 className='text-3xl font-medium text-gray-700'> Welcome Back {username} <span className='text-amber-200'>👋</span></h1>}
       <h1 className='text-8xl font-bold  text-shadow-outline text-shadow-amber-200 text-shadow-2xs'>Craft Your Story, Your Way</h1>
       <p className=' text-2xl text-gray-700 bg-blue-100'> All in one writing platform designed to help authoring bring their story to lilfe. from outlining to publishing</p>
-      <Link to="/editor">
+      <Link to="/createbook">
         <Button  name="Create new book"/>
       </Link>
       </div>
