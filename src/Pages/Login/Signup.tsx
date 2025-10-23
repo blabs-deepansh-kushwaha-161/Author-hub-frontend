@@ -121,7 +121,7 @@ function Signup() {
                         >
                             Create an account
                         </button>
-                        {message && <p className="text-sm mt-2">{message}</p>}
+                        {message && <p className="text-sm mt-2 text-red-500 ">{message}</p>}
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Already have an account?{" "}
                             <Link to="/login" className="font-medium text-blue-600 hover:underline dark:text-blue-500">

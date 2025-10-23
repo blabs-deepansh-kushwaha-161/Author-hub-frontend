@@ -1,8 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router'
 import Button from '../../components/Button'
+import { isLoggedIn } from "../../utils/auth";
 
 function Home() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!isLoggedIn()) {
+      navigate("/login"); // redirect if not logged in
+    } else {
+      setLoggedIn(true);
+    }
+  }, [navigate]);
+
+  if (!loggedIn) return null; // prevent flashing before redirect
+
   return (
     <div>
       <div className='relative backdrop-blur-sm blur-sm  z-[-1]' > 

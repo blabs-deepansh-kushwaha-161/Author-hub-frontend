@@ -40,11 +40,11 @@ function UploadFile() {
 
   return (
     <>
-    <div className="p-20 flex justify-center items-center">
+    <div className="p-20 flex justify-center items-center ">
     
 
-    <form className="flex gap-4 justify-center items-center " onSubmit={handleSubmit}>
-      <input className="border  rounded px-2" type="file" onChange={handleFileChange} />
+    <form className="flex flex-col gap-10 justify-center items-center border border-gray-200 shadow-md bg-gray-50 mt-20 p-10 px-20 rounded-2xl " onSubmit={handleSubmit}>
+      <input className="border border-gray-300  rounded p-2" type="file" onChange={handleFileChange} />
       <button className="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="submit">Upload & Convert to EPUB</button>
     </form>
 
